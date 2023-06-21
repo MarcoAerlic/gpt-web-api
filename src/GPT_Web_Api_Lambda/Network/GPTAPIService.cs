@@ -28,6 +28,7 @@ namespace GPT_Web_Api_Lambda.Network
             var apiKey = await _ssmClient.GetParameterAsync(openAiApiKey);
 
             List<string> rq = new List<string>();
+
             OpenAIAPI api = new OpenAIAPI(new APIAuthentication(apiKey));
 
             var completionRequest = new OpenAI_API.Completions.CompletionRequest()
