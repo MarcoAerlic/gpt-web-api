@@ -42,6 +42,7 @@ namespace GPT_Web_Api_Lambda.Network
 
             };
 
+
             var result = await api.Completions.CreateCompletionsAsync(completionRequest);
             foreach (var choice in result.Completions)
             {
