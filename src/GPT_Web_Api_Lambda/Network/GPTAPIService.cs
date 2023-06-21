@@ -22,6 +22,8 @@ namespace GPT_Web_Api_Lambda.Network
         public async Task<List<string>> GenerateContentDaVinciAPI(GPTGenerateRequestModelDTO generateRequestModel)
         {
             //If you are testing locally replace with the test Open Ai api key value.
+
+
             //You will be able to get it from the evironment variable section of 
             //the gpt test lambda function page/ui.
             var apiKey = await _ssmClient.GetParameterAsync(openAiApiKey);
