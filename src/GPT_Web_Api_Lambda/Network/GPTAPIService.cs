@@ -26,6 +26,7 @@ namespace GPT_Web_Api_Lambda.Network
 
             //You will be able to get it from the evironment variable section of 
             //the gpt test lambda function page/ui.
+
             var apiKey = await _ssmClient.GetParameterAsync(openAiApiKey);
 
 
