@@ -17,6 +17,7 @@ namespace GPT_Web_Api_Lambda.Network
         {
             _config = config;
             _ssmClient = ssmClient;
+
         }
 
         public async Task<List<string>> GenerateContentDaVinciAPI(GPTGenerateRequestModelDTO generateRequestModel)
