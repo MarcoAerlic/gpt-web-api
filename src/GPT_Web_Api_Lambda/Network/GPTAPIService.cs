@@ -28,6 +28,8 @@ namespace GPT_Web_Api_Lambda.Network
             //the gpt test lambda function page/ui.
             var apiKey = await _ssmClient.GetParameterAsync(openAiApiKey);
 
+
+
             List<string> rq = new List<string>();
             OpenAIAPI api = new OpenAIAPI(new APIAuthentication(apiKey));
 
